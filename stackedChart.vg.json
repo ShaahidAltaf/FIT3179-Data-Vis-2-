@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "url": "clean energy.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "area",
+    "line": true,
+    "point": true
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": { "title": "Year" }
+    },
+    "y": {
+      "field": "Investment (Billion USD)",
+      "type": "quantitative",
+
+      "axis": { "title": "Investment in Clean Energy (Billion USD)" }
+    },
+    "color": {
+      "field": "Type of Power Supply",
+      "type": "nominal",
+      "scale": {
+        "scheme": "category10"
+      },
+      "legend": { "title": "Clean Energy Types" }
+    },
+    "tooltip": [
+      { "field": "Year", "type": "temporal", "title": "Year" },
+      {
+        "field": "Type of Power Supply",
+        "type": "nominal",
+        "title": "Clean Energy Type"
+      },
+      {
+        "field": "Investment (Billion USD)",
+        "type": "quantitative",
+        "format": ".2f",
+        "title": "Investment"
+      }
+    ]
+  }
+}
