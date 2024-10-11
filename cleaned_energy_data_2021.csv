@@ -1,0 +1,213 @@
+Country,ISO_A3,Renewable Energy Consumption 2021
+Afghanistan,AFG,20.0
+Albania,ALB,41.9
+Algeria,DZA,0.1
+American Samoa,ASM,0.4
+Andorra,AND,18.4
+Angola,AGO,52.9
+Antigua and Barbuda,ATG,0.9
+Argentina,ARG,9.2
+Armenia,ARM,9.1
+Aruba,ABW,8.8
+Australia,AUS,12.3
+Austria,AUT,36.0
+Azerbaijan,AZE,1.3
+"Bahamas, The",BHS,1.1
+Bahrain,BHR,0.0
+Bangladesh,BGD,25.0
+Barbados,BRB,5.5
+Belarus,BLR,8.2
+Belgium,BEL,11.7
+Belize,BLZ,26.6
+Benin,BEN,54.5
+Bermuda,BMU,0.9
+Bhutan,BTN,81.8
+Bolivia,BOL,12.8
+Bosnia and Herzegovina,BIH,36.6
+Botswana,BWA,27.4
+Brazil,BRA,46.5
+British Virgin Islands,VGB,1.3
+Brunei Darussalam,BRN,0.0
+Bulgaria,BGR,20.4
+Burkina Faso,BFA,71.2
+Burundi,BDI,83.1
+Cabo Verde,CPV,22.6
+Cambodia,KHM,52.4
+Cameroon,CMR,79.2
+Canada,CAN,23.8
+Cayman Islands,CYM,0.0
+Central African Republic,CAF,90.9
+Chad,TCD,69.9
+Chile,CHL,24.2
+China,CHN,15.2
+Colombia,COL,29.7
+Comoros,COM,41.2
+"Congo, Dem. Rep.",COD,96.3
+"Congo, Rep.",COG,71.4
+Costa Rica,CRI,34.2
+Cote d'Ivoire,CIV,58.2
+Croatia,HRV,34.1
+Cuba,CUB,20.9
+Curacao,CUW,2.8
+Cyprus,CYP,15.6
+Czechia,CZE,17.2
+Denmark,DNK,39.5
+Djibouti,DJI,26.6
+Dominica,DMA,8.8
+Dominican Republic,DOM,14.8
+Ecuador,ECU,18.9
+"Egypt, Arab Rep.",EGY,6.1
+El Salvador,SLV,21.9
+Equatorial Guinea,GNQ,5.2
+Eritrea,ERI,80.7
+Estonia,EST,38.0
+Eswatini,SWZ,65.4
+Ethiopia,ETH,90.6
+Faroe Islands,FRO,5.1
+Fiji,FJI,29.7
+Finland,FIN,50.2
+France,FRA,16.2
+French Polynesia,PYF,7.4
+Gabon,GAB,91.3
+"Gambia, The",GMB,48.6
+Georgia,GEO,25.2
+Germany,DEU,17.6
+Ghana,GHA,39.0
+Gibraltar,GIB,0.0
+Greece,GRC,21.5
+Greenland,GRL,11.6
+Grenada,GRD,10.2
+Guam,GUM,4.5
+Guatemala,GTM,62.1
+Guinea,GIN,66.8
+Guinea-Bissau,GNB,87.4
+Guyana,GUY,13.2
+Haiti,HTI,76.7
+Honduras,HND,45.9
+"Hong Kong SAR, China",HKG,0.4
+Hungary,HUN,15.3
+Iceland,ISL,82.4
+India,IND,34.9
+Indonesia,IDN,20.2
+"Iran, Islamic Rep.",IRN,0.9
+Iraq,IRQ,1.1
+Ireland,IRL,12.7
+Isle of Man,IMN,3.2
+Israel,ISR,6.2
+Italy,ITA,17.5
+Jamaica,JAM,10.5
+Japan,JPN,8.8
+Jordan,JOR,11.5
+Kazakhstan,KAZ,2.0
+Kenya,KEN,67.7
+Kiribati,KIR,42.2
+"Korea, Dem. People's Rep.",PRK,14.7
+"Korea, Rep.",KOR,3.6
+Kuwait,KWT,0.1
+Kyrgyz Republic,KGZ,27.6
+Lao PDR,LAO,51.5
+Latvia,LVA,44.0
+Lebanon,LBN,6.8
+Lesotho,LSO,33.6
+Liberia,LBR,93.2
+Libya,LBY,3.1
+Liechtenstein,LIE,53.6
+Lithuania,LTU,33.2
+Luxembourg,LUX,20.5
+"Macao SAR, China",MAC,13.6
+Madagascar,MDG,83.6
+Malawi,MWI,71.1
+Malaysia,MYS,7.5
+Maldives,MDV,1.4
+Mali,MLI,71.2
+Malta,MLT,8.6
+Marshall Islands,MHL,12.1
+Mauritania,MRT,22.1
+Mauritius,MUS,8.6
+Mexico,MEX,13.0
+"Micronesia, Fed. Sts.",FSM,2.1
+Moldova,MDA,21.4
+Mongolia,MNG,3.0
+Montenegro,MNE,39.6
+Morocco,MAR,10.9
+Mozambique,MOZ,76.9
+Myanmar,MMR,62.9
+Namibia,NAM,30.0
+Nauru,NRU,1.6
+Nepal,NPL,73.7
+Netherlands,NLD,12.2
+New Caledonia,NCL,8.3
+New Zealand,NZL,28.9
+Nicaragua,NIC,50.4
+Niger,NER,79.6
+Nigeria,NGA,80.3
+North Macedonia,MKD,19.5
+Northern Mariana Islands,MNP,0.5
+Norway,NOR,61.4
+Oman,OMN,0.1
+Pakistan,PAK,41.6
+Palau,PLW,0.9
+Panama,PAN,28.0
+Papua New Guinea,PNG,54.5
+Paraguay,PRY,58.8
+Peru,PER,30.6
+Philippines,PHL,28.0
+Poland,POL,15.2
+Portugal,PRT,32.3
+Puerto Rico,PRI,2.6
+Qatar,QAT,0.0
+Romania,ROU,23.6
+Russian Federation,RUS,3.5
+Rwanda,RWA,79.4
+Samoa,WSM,36.0
+Sao Tome and Principe,STP,40.8
+Saudi Arabia,SAU,0.1
+Senegal,SEN,35.4
+Serbia,SRB,27.2
+Seychelles,SYC,1.7
+Sierra Leone,SLE,71.1
+Singapore,SGP,1.1
+Sint Maarten (Dutch part),SXM,0.0
+Slovak Republic,SVK,17.9
+Slovenia,SVN,23.4
+Solomon Islands,SLB,49.1
+Somalia,SOM,95.4
+South Africa,ZAF,9.7
+South Sudan,SSD,32.4
+Spain,ESP,19.0
+Sri Lanka,LKA,48.8
+St. Kitts and Nevis,KNA,1.6
+St. Lucia,LCA,9.7
+St. Vincent and the Grenadines,VCT,5.0
+Sudan,SDN,61.0
+Suriname,SUR,14.5
+Sweden,SWE,57.9
+Switzerland,CHE,27.7
+Syrian Arab Republic,SYR,1.1
+Tajikistan,TJK,34.9
+Tanzania,TZA,78.3
+Thailand,THA,19.0
+Timor-Leste,TLS,12.1
+Togo,TGO,75.1
+Tonga,TON,1.8
+Trinidad and Tobago,TTO,0.5
+Tunisia,TUN,11.6
+Turkiye,TUR,12.0
+Turkmenistan,TKM,0.1
+Turks and Caicos Islands,TCA,0.8
+Tuvalu,TUV,5.0
+Uganda,UGA,91.0
+Ukraine,UKR,8.9
+United Arab Emirates,ARE,1.0
+United Kingdom,GBR,12.2
+United States,USA,10.9
+Uruguay,URY,57.8
+Uzbekistan,UZB,1.0
+Vanuatu,VUT,24.6
+"Venezuela, RB",VEN,33.7
+Viet Nam,VNM,24.2
+Virgin Islands (U.S.),VIR,5.9
+West Bank and Gaza,PSE,15.4
+"Yemen, Rep.",YEM,3.7
+Zambia,ZMB,83.0
+Zimbabwe,ZWE,82.4
