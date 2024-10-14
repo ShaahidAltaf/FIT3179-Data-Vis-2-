@@ -1,3 +1,6 @@
+Source: IEA. Licence: CC BY 4.0,
+This data is subject to the IEA's terms and conditions: https://www.iea.org/t_c/termsandconditions/,
+Units: billion USD (2023, MER)
 Year,Type of Power Supply,Investment (Billion USD)
 2015,Renewable Power,343
 2015,Grids and Storage,338
@@ -11,7 +14,7 @@ Year,Type of Power Supply,Investment (Billion USD)
 2016,Low-emissions Fuels,8
 2017,Renewable Power,354
 2017,Grids and Storage,341
-2017,Energy Efficiency and End-Use,495
+2017,Energy Efficiency and End-Use,465
 2017,Nuclear and Other Clean Power,41
 2017,Low-emissions Fuels,8
 2018,Renewable Power,379
@@ -19,9 +22,9 @@ Year,Type of Power Supply,Investment (Billion USD)
 2018,Energy Efficiency and End-Use,451
 2018,Nuclear and Other Clean Power,40
 2018,Low-emissions Fuels,8
-2019,Energy Efficiency and End-Use,455
 2019,Renewable Power,424
 2019,Grids and Storage,316
+2019,Energy Efficiency and End-Use,455
 2019,Nuclear and Other Clean Power,40
 2019,Low-emissions Fuels,9
 2020,Renewable Power,446
@@ -49,13 +52,4 @@ Year,Type of Power Supply,Investment (Billion USD)
 2024,Energy Efficiency and End-Use,669
 2024,Nuclear and Other Clean Power,80
 2024,Low-emissions Fuels,31
-2015,fossil fuel,1374
-2016,fossil fuel,1145
-2017,fossil fuel,1179
-2018,fossil fuel,1170
-2019,fossil fuel,1127
-2020,fossil fuel,897
-2021,fossil fuel,963
-2022,fossil fuel,1036
-2023,fossil fuel,1090
-2024,fossil fuel,1116
+

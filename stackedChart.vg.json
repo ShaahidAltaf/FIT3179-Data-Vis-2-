@@ -4,48 +4,112 @@
   "height": 400,
   "data": {
     "url": "clean energy.csv",
-    "format": {
-      "type": "csv"
+    "format": { "type": "csv" }
+  },
+  "transform": [
+    {
+      "calculate": "datum['Type of Power Supply'] == 'fossil fuel' ? 'Fossil Fuels' : 'Clean Energy'",
+      "as": "Energy Group"
     }
-  },
-  "mark": {
-    "type": "area",
-    "line": true,
-    "point": true
-  },
+  ],
   "encoding": {
     "x": {
       "field": "Year",
-      "type": "temporal",
-      "axis": { "title": "Year" }
-    },
-    "y": {
-      "field": "Investment (Billion USD)",
-      "type": "quantitative",
-
-      "axis": { "title": "Investment in Clean Energy (Billion USD)" }
-    },
-    "color": {
-      "field": "Type of Power Supply",
       "type": "nominal",
-      "scale": {
-        "scheme": "category10"
+      "axis": { "labelAngle": 0 }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "bar", "size": 30, "xOffset": -20 },
+      "encoding": {
+        "y": {
+          "aggregate": "sum",
+          "field": "Investment (Billion USD)",
+          "type": "quantitative",
+          "axis": { "title": "Investment (Billion USD)" }
+        },
+        "color": {
+          "field": "Type of Power Supply",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Renewable Power",
+              "Grids and Storage",
+              "Energy Efficiency and End-Use",
+              "Nuclear and Other Clean Power",
+              "Low-emissions Fuels",
+              "Fossil Fuel"
+            ],
+            "range": [
+              "#FF0000",
+              "#e06f0a",
+              "#003366",
+              "#0abce0",
+              "#800080",
+              "lightblue"
+            ]
+          },
+          "legend": { "title": "Energy Types" }
+        },
+        "tooltip": [
+          { "field": "Year", "type": "nominal", "title": "Year" },
+          {
+            "field": "Investment (Billion USD)",
+            "type": "quantitative",
+            "title": "Investment (Billion USD)"
+          },
+          {
+            "field": "Type of Power Supply",
+            "type": "nominal",
+            "title": "Energy Type"
+          }
+        ]
       },
-      "legend": { "title": "Clean Energy Types" }
+      "transform": [
+        { "filter": "datum['Type of Power Supply'] != 'fossil fuel'" }
+      ]
     },
-    "tooltip": [
-      { "field": "Year", "type": "temporal", "title": "Year" },
-      {
-        "field": "Type of Power Supply",
-        "type": "nominal",
-        "title": "Clean Energy Type"
+    {
+      "mark": {
+        "type": "bar",
+        "size": 30,
+        "xOffset": 20,
+        "color": "lightblue"
       },
-      {
-        "field": "Investment (Billion USD)",
-        "type": "quantitative",
-        "format": ".2f",
-        "title": "Investment"
-      }
-    ]
+      "encoding": {
+        "y": {
+          "field": "Investment (Billion USD)",
+          "type": "quantitative",
+          "axis": { "title": "Investment (Billion USD)" }
+        },
+        "tooltip": [
+          { "field": "Year", "type": "nominal", "title": "Year" },
+          {
+            "field": "Investment (Billion USD)",
+            "type": "quantitative",
+            "title": "Investment (Billion USD)"
+          },
+          {
+            "field": "Type of Power Supply",
+            "type": "nominal",
+            "title": "Energy Type"
+          }
+        ]
+      },
+      "transform": [
+        { "filter": "datum['Type of Power Supply'] == 'fossil fuel'" }
+      ]
+    }
+  ],
+  "config": {
+    "background": "#dff0de",
+    "axis": {
+      "titleColor": "#527298",
+      "labelColor": "#527298",
+      "labelFont": "sans-serif",
+      "labelFontSize": 15,
+      "titleFontSize": 15
+    }
   }
 }

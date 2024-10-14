@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "url": "co-emissions-per-capita.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Country",
+        "oneOf": [
+          "United States",
+          "United Kingdom",
+          "Malaysia",
+          "China",
+          "India"
+        ]
+      }
+    },
+    {
+      "calculate": "toNumber(datum.Year)",
+      "as": "YearNum"
+    }
+  ],
+
+  "mark": {
+    "type": "line"
+  },
+  "encoding": {
+    "x": {
+      "field": "YearNum",
+      "type": "quantitative",
+      "axis": { "title": "Year" }
+    },
+    "y": {
+      "field": "Annual CO2 emissions (per capita)",
+      "type": "quantitative",
+      "axis": { "title": "CO2 Emissions (Tonnes per Person)" }
+    },
+    "color": {
+      "field": "Country",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "United States",
+          "United Kingdom",
+          "Malaysia",
+          "China",
+          "India"
+        ],
+        "range": ["#FF0000", "#e06f0a", "#003366", "#0abce0", "#800080"]
+      },
+      "legend": { "title": "Country" }
+    },
+    "tooltip": [
+      { "field": "YearNum", "type": "quantitative", "title": "Year" },
+      {
+        "field": "Country",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "Annual CO2 emissions (per capita)",
+        "type": "quantitative",
+        "title": "CO2 Emissions (Tonnes per Person)",
+        "format": ".2f"
+      }
+    ]
+  }
+}

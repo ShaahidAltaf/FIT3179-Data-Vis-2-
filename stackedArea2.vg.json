@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stacked area chart for non renewable energy types over time with a region filter.",
+  "width": 800,
+  "height": 500,
+  "data": {
+    "url": "global-fossil-fuel-consumption.csv"
+  },
+  "params": [
+    {
+      "name": "selecta",
+      "value": 2023,
+      "bind": {
+        "input": "range",
+        "min": 1800,
+        "max": 2023,
+        "step": 1,
+        "name": "Select year:"
+      }
+    }
+  ],
+  "transform": [
+    { "calculate": "year(datum.Year)", "as": "Year" },
+    { "filter": "datum.Year<=selecta" },
+    {
+      "fold": [
+        "Gas (TWh, direct energy)",
+        "Oil (TWh, direct energy)",
+        "Coal (TWh, direct energy)"
+      ],
+      "as": ["Energy_Type", "TWh"]
+    }
+  ],
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": { "title": "Year" }
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "TWh",
+      "type": "quantitative",
+      "axis": { "title": "Energy Consumption (TWh)" }
+    },
+    "color": {
+      "field": "Energy_Type",
+      "type": "nominal",
+      "legend": { "title": "Energy Type" }
+    },
+    "tooltip": [
+      { "field": "Entity", "type": "nominal", "title": "Region" },
+      { "field": "Energy_Type", "type": "nominal", "title": "Energy Type" },
+      { "field": "TWh", "type": "quantitative", "title": "TWh" },
+      { "field": "Year", "type": "temporal", "title": "Year" }
+    ]
+  },
+  "config": {
+    "background": "#dff0de",
+    "axis": {
+      "titleColor": "#527298",
+      "labelColor": "#527298",
+      "labelFont": "sans-serif",
+      "labelFontSize": 15,
+      "titleFontSize": 15
+    }
+  }
+}

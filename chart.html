@@ -3,21 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+
+  
   <!-- Include Vega and Vega-Lite Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   <!-- Link to JavaScript File -->
-  <script src="vegalite_vis.js" defer></script>
+  <script src="vegalite_vis.js"></script>
+  <link rel="stylesheet" type="text/css" href=" chart.css" media="all">
 </head>
 <body>
-  <!-- Container to hold the map visualization -->
-  <h1>Percentage of Renewable Energy Consumption</h1>
-  <div id="map"></div>
+  <h1>Energy Consumption and Sustainability</h1>
 
-  <!-- Container to hold the line chart   -->
-  <h2>Amount Invested in Different Types Of Clean Energy</h2>
-  <div id="Stacked_chart"></div>
+  
+
+  <div class="pure-g"> 
+
+    
+    <!-- Section for Renewable Energy Map -->
+    <div class="pure-u-1 pure-u-md-1-2 chart-container">
+      <h2>Percentage of Renewable Energy Consumption</h2>
+      <p>This map shows the percentage of renewable energy consumption by country. It provides insights into the geographical distribution of countries leading in the adoption of clean energy.
+        As         fossil fuels(natural gas, oil, and coal)accounting for approximately 80% of its energMalaysia navigates the complexities of energy consumption, the nation stands at a crossroads. With a rich tapestry of energy resources, the country has historically relied on 
+y supply in 2020. However, the winds of change are blowing, with increasing pressure to transition to renewable energy sources to combat climate change and promote sustainability.
+      </p>
+      <div id="map"></div>
+    </div>
+
+    <!-- Section for Energy Investment -->
+    <div class="pure-u-1 pure-u-md-1-2 chart-container">
+      <h2>Amount Invested in Different Types of Energy</h2>
+      <p>This chart presents the amount invested in various types of energy (renewable and non-renewable) over recent years. It emphasizes the growing financial commitment to clean energy infrastructure.
+        Malaysia's investments tell a compelling story. In 2021, approximately $5 billion was allocated to renewable energy projects,
+         a notable increase from just $2 billion in 2015. In contrast, investments in non-renewable energy sources have remained stagnant at around $8 billion. This shift indicates a growing recognition of the importance of renewables; however, to achieve its goal of 20% renewable energy generation by 2025, Malaysia must significantly ramp up investment.
+      </p>
+      <div id="Stacked_chart"></div>
+    </div>
+
+    <!-- Section for Non-Renewable Energy Consumption -->
+    <div class="pure-u-1 chart-container">
+      <h2>Global Non-Renewable Energy Consumption</h2>
+       <p>This visualization highlights the consumption of non-renewable energy resources globally. It allows us to see how much the world still relies on fossil fuels.</p>
+      <div id="Stacked_Area2"></div>
+    </div>
+    
+    <!-- Section for Modern Renewable Energy -->
+    <div class=" pure-u-1 chart-container">
+      <h2>Modern Renewable Energy Consumption</h2>
+      <p>This chart visualizes the growth of modern renewable energy sources, such as wind, solar, and hydro, over the years, reflecting the shift from fossil fuels.</p>
+      <div id="Stacked_Area"></div>
+    </div>
+
+
+  </div>
+
+
+
 </body>
 </html>

@@ -1,0 +1,125 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stacked area chart for renewable energy types over time with a region filter.",
+  "width": 800,
+  "height": 500,
+  "data": {
+    "url": "modern-renewable-energy-consumption.csv"
+  },
+  "params": [
+    {
+      "name": "selecta",
+      "value": 2023,
+      "bind": {
+        "input": "range",
+        "min": 1965,
+        "max": 2023,
+        "step": 1,
+        "name": "Select year:"
+      }
+    },
+    {
+      "name": "region",
+      "value": "World",
+      "bind": {
+        "input": "select",
+        "options": [
+          "World",
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "South America",
+          "Algeria",
+          "Argentina",
+          "Australia",
+          "Brazil",
+          "Canada",
+          "China",
+          "France",
+          "Germany",
+          "India",
+          "Japan",
+          "Malaysia",
+          "South Africa",
+          "United States",
+          "United Kingdom"
+        ],
+        "labels": [
+          "World",
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "South America",
+          "Algeria",
+          "Argentina",
+          "Australia",
+          "Brazil",
+          "Canada",
+          "China",
+          "France",
+          "Germany",
+          "India",
+          "Japan",
+          "Malaysia",
+          "South Africa",
+          "United States",
+          "United Kingdom"
+        ],
+        "name": "Region/Country: "
+      }
+    }
+  ],
+  "transform": [
+    { "calculate": "year(datum.Year)", "as": "Year" },
+    { "filter": "datum.Year<=selecta" },
+    {
+      "fold": [
+        "Other renewables (including geothermal and biomass) electricity generation - TWh",
+        "Solar generation - TWh",
+        "Wind generation - TWh",
+        "Hydro generation - TWh"
+      ],
+      "as": ["Energy_Type", "TWh"]
+    },
+    {
+      "filter": "datum.Entity == region"
+    }
+  ],
+  "mark": "area",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": { "title": "Year" }
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "TWh",
+      "type": "quantitative",
+      "axis": { "title": "Energy Consumption (TWh)" }
+    },
+    "color": {
+      "field": "Energy_Type",
+      "type": "nominal",
+      "legend": { "title": "Energy Type" }
+    },
+    "tooltip": [
+      { "field": "Entity", "type": "nominal", "title": "Region" },
+      { "field": "Energy_Type", "type": "nominal", "title": "Energy Type" },
+      { "field": "TWh", "type": "quantitative", "title": "TWh" },
+      { "field": "Year", "type": "temporal", "title": "Year" }
+    ]
+  },
+  "config": {
+    "background": "#dff0de",
+    "axis": {
+      "titleColor": "#527298",
+      "labelColor": "#527298",
+      "labelFont": "sans-serif",
+      "labelFontSize": 15,
+      "titleFontSize": 15
+    }
+  }
+}
