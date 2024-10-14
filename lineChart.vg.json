@@ -3,7 +3,7 @@
   "width": 800,
   "height": 400,
   "data": {
-    "url": "co-emissions-per-capita.csv",
+    "url": "https://shaahidaltaf.github.io/FIT3179-Data-Vis-2-/co-emissions-per-capita.csv",
     "format": {
       "type": "csv"
     }
@@ -17,7 +17,8 @@
           "United Kingdom",
           "Malaysia",
           "China",
-          "India"
+          "India",
+          "Australia"
         ]
       }
     },
@@ -50,9 +51,17 @@
           "United Kingdom",
           "Malaysia",
           "China",
-          "India"
+          "India",
+          "Australia"
         ],
-        "range": ["#FF0000", "#e06f0a", "#003366", "#0abce0", "#800080"]
+        "range": [
+          "#FF0000",
+          "#e06f0a",
+          "#003366",
+          "#0abce0",
+          "#800080",
+          "orange"
+        ]
       },
       "legend": { "title": "Country" }
     },

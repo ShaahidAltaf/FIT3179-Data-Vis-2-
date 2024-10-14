@@ -17,3 +17,4 @@ vegaEmbed('#Stacked_Area', spec5).then(function(result) {
 var spec6 = "stackedArea2.vg.json";
 vegaEmbed('#Stacked_Area2', spec6).then(function(result) {
 }).catch(console.error);
+

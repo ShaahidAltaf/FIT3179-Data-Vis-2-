@@ -4,7 +4,7 @@
   "width": 800,
   "height": 500,
   "data": {
-    "url": "global-fossil-fuel-consumption.csv"
+    "url": "https://shaahidaltaf.github.io/FIT3179-Data-Vis-2-/global-fossil-fuel-consumption.csv"
   },
   "params": [
     {
