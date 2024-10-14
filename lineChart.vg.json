@@ -79,5 +79,15 @@
         "format": ".2f"
       }
     ]
+  },
+  "config": {
+    "background": "#dff0de",
+    "axis": {
+      "titleColor": "#527298",
+      "labelColor": "#527298",
+      "labelFont": "sans-serif",
+      "labelFontSize": 15,
+      "titleFontSize": 15
+    }
   }
 }

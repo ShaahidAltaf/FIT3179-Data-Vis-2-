@@ -36,7 +36,6 @@ h2 {
 }
 
 
-
 p {
     text-align: center;
     font-size: 16px;
@@ -48,14 +47,4 @@ p {
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-    .pure-u-1-2 {
-      width: 100%;
-    }
-}
-@media (max-width: 768px) {
-    .pure-u-1-2 img, .chart-container1 p {
-        width: 100%;
-        height: auto;
-    }
-}
+
